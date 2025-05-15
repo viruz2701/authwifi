@@ -51,7 +51,7 @@ SMSRU_FROM=HotSpotAuth
 ADMIN_USERNAME=admin
 ADMIN_PASSWORD=securepassword
 MIKROTIK_SECRET=shared_secret_for_hotspot
-EXTERNAL_URL=https://sbp.myftp.biz
+EXTERNAL_URL=https://
 
 Создайте базовый README.md:
 
