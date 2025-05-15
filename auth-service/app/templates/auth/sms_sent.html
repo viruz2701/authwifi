@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Код отправлен</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <style>
+        body { background-color: #f8f9fa; }
+        .auth-container { max-width: 400px; margin: 0 auto; padding-top: 50px; }
+        .auth-card { border: none; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .auth-header { background-color: #28a745; color: white; border-radius: 10px 10px 0 0 !important; }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="card auth-card">
+            <div class="card-header auth-header text-center py-3">
+                <h4>Код отправлен</h4>
+            </div>
+            <div class="card-body p-4 text-center">
+                <p>Код подтверждения отправлен на номер {{ phone }}.</p>
+                <p>Пожалуйста, введите его в форме ниже.</p>
+                <a href="{{ url_for('auth.show_auth_form') }}" class="btn btn-outline-secondary mt-3">Назад</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
